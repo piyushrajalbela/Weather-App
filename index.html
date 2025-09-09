@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather App </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    
+</head>
+<body>
+     <div class="main-container">
+        <header class = "input-container">
+            <input class = "input-city" placeholder="Search City">
+            <button class = "search-btn"> <span class="material-symbols-outlined">search</span></button>
+        </header>
+        <div class="weather-info" style = "display:none">
+            <div class="location-date">
+                 <div class="location">
+                      <span class="material-symbols-outlined">location_on</span>
+                      <h4 class = "country"> India </h4>
+                 </div>
+                 <h5 class = "current-day-date"> Sun, 07 Sept</h5>
+            </div>
+               <div class="weather-highlights">
+                <img class = "weather-image" src = "weather/clouds.svg" alt="weather highlights">
+                 <div class="temperature">
+                    <h2 class = "temp-text"> 29°C</h2>
+                    <h3 class = "condition">Clouds </h3>
+                 </div>
+               </div>
+            <div class = "water-drop"> 
+               <div class="weather-final-condition">
+                     <div class="condition-item">
+                        <span class="material-symbols-outlined">water_drop</span>
+                     </div>
+                     <div class="condition-item">
+                      <h5 class="condition1">Humidity</h5>
+                      <h5 class="humidity-value">55%</h5>
+                     </div>
+               </div>
+               <div class="weather-final-condition">
+                     <div class="condition-item">
+                        <span class="material-symbols-outlined">air</span>
+                     </div>
+                     <div class="condition-item">
+                      <h5 class="condition1">Wind Speed</h5>
+                      <h5 class="wind-value">4 M/s</h5>
+                     </div>
+                </div>
+            </div> 
+             <div class="forecast-items-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-date condition"> 07 Sep</h5>
+                    <img src="weather/thunderstorm.svg" alt="" class="forecast-image">
+                    <h5 class="forecast-temp"> 29°C </h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-date condition"> 07 Sep</h5>
+                    <img src="weather/thunderstorm.svg" alt="" class="forecast-image">
+                    <h5 class="forecast-temp"> 29°C </h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-date condition"> 07 Sep</h5>
+                    <img src="weather/thunderstorm.svg" alt="" class="forecast-image">
+                    <h5 class="forecast-temp"> 29°C </h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-date condition"> 07 Sep</h5>
+                    <img src="weather/thunderstorm.svg" alt="" class="forecast-image">
+                    <h5 class="forecast-temp"> 29°C </h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-date condition"> 07 Sep</h5>
+                    <img src="weather/thunderstorm.svg" alt="" class="forecast-image">
+                    <h5 class="forecast-temp"> 29°C </h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-date condition"> 07 Sep</h5>
+                    <img src="weather/thunderstorm.svg" alt="" class="forecast-image">
+                    <h5 class="forecast-temp"> 29°C </h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-date condition"> 07 Sep</h5>
+                    <img src="weather/thunderstorm.svg" alt="" class="forecast-image">
+                    <h5 class="forecast-temp"> 29°C </h5>
+                </div>
+             </div>
+        </div>
+              <div class="search-city">
+                <img src="search-city.png" alt="" class="message-img">
+                <div>
+                    <h1>Search City</h1>
+                    <h4 class="condition1">Weather Forecast Of Your City </h4>
+                </div>
+              </div>
+              <div class="not-found" style = "display:none">
+                <img src="not-found.png" alt="" class="notfound-img">
+                <div>
+                    <h1>Search City</h1>
+                    <h4 class="condition1">Weather Forecast Of Your City </h4>
+                </div>
+              </div>    
+     </div>
+     <script src="app.js" defer > </script>   
+</body>
+</html>
