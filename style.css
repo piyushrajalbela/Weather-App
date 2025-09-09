@@ -19,6 +19,8 @@ body{
     overflow:hidden;
 }
 body::before{
+    top:0;
+    left:0;
     content:"";
     position: absolute;
     width:100%;
