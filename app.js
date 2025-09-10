@@ -144,7 +144,7 @@ function setWeatherAnimation(id) {
 
     document.body.classList.remove("rainy", "snowy", "thunderstorm","cloudy");
     mainContainer.classList.remove("rainy", "snowy", "thunderstorm","cloudy");
-
+    weatherImage.classList.remove("sunny");
           document.querySelectorAll(".cloud").forEach(el => el.remove());
 
 
@@ -181,8 +181,6 @@ function setWeatherAnimation(id) {
 
     else if (id === 800) {
         weatherImage.classList.add("sunny");
-    } else {
-        weatherImage.classList.remove("sunny");
     }
 }
 
